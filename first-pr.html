@@ -237,7 +237,7 @@
   <h1>Your First Pull Request</h1>
   <p class="sub">Got your tools installed through the club's
   <a href="index.html" target="_blank" rel="noopener noreferrer">Setup Guide</a>? This page walks you to your own
-  profile card merged into the team's <a href="https://github.com/simonteague6/profile-card" target="_blank" rel="noopener noreferrer">profile-card</a> repo.
+  text file merged into the team's <a href="https://github.com/simonteague6/rc-first-pr-practice" target="_blank" rel="noopener noreferrer">rc-first-pr-practice</a> repo.
   No experience needed. Do one step at a time and check it off. Your progress is saved in this
   browser, so you can close the tab and come back later.</p>
 </div>
@@ -272,7 +272,7 @@
 <section class="stage" id="stage-1">
   <div class="stage-head"><span class="stage-num">STAGE 1</span><h2>Get ready</h2></div>
   <div class="stage-intro">
-    <p>This page assumes you've already worked through the club's <a href="index.html">Setup Guide</a>, so <code>git</code> and the Zed editor are installed, and on Windows, WSL with Ubuntu is set up and ready. You won't need to install anything new here.</p>
+    <p>This page assumes you've already worked through the club's <a href="index.html">Setup Guide</a>, so <code>git</code> and the VS Code editor are installed, and on Windows, WSL with Ubuntu is set up and ready. You won't need to install anything new here.</p>
     <p>This stage just gets your identity ready for GitHub.</p>
   </div>
 
@@ -300,8 +300,8 @@
       <label class="step-done"><input type="checkbox" data-step="s1-tools"> Done</label>
     </div>
     <div class="step-body">
-      <p>The club&rsquo;s <a href="index.html">Setup Guide</a> already installed <code>git</code>, Zsh, the Zed editor, and (on Windows) WSL with Ubuntu &mdash; nothing to reinstall here.</p>
-      <p>When the rest of this page says &ldquo;in your terminal&rdquo;,<span data-os="mac"> just open Terminal (press <kbd>Cmd</kbd>+<kbd>Space</kbd>, type <code>Terminal</code>).</span><span data-os="win"> get into Ubuntu first: press the Start key, type <code>terminal</code>, then run <code>wsl</code> and <code>cd ~</code>.</span></p>
+      <p>The club&rsquo;s <a href="index.html">Setup Guide</a> already installed <code>git</code>, the VS Code editor, and (on Windows) WSL with Ubuntu &mdash; nothing to reinstall here.</p>
+      <p>When the rest of this page says &ldquo;in your terminal&rdquo;,<span data-os="mac"> just open Terminal (press <kbd>Cmd</kbd>+<kbd>Space</kbd>, type <code>Terminal</code>).</span><span data-os="win"> open VS Code connected to <strong>WSL: Ubuntu</strong> and press <kbd>Ctrl</kbd>+<kbd>`</kbd>.</span></p>
     </div>
   </div>
 
@@ -313,7 +313,7 @@
       <label class="step-done"><input type="checkbox" data-step="s1-config"> Done</label>
     </div>
     <div class="step-body">
-      <p>Every change you save with git gets stamped with a name and email. Set them once and git remembers forever. Run these in your terminal<span data-os="win"> (inside Ubuntu; type <code>wsl</code> first if you opened Windows Terminal)</span>:</p>
+      <p>Every change you save with git gets stamped with a name and email. Set them once and git remembers forever. Run these in your terminal<span data-os="win"> (in VS Code connected to WSL: Ubuntu)</span>:</p>
       <div class="code-block"><pre><code>git config --global user.name "<span class="var" data-var="name" data-ph="YOUR NAME">YOUR NAME</span>"</code></pre><button type="button" class="copy-btn">Copy</button></div>
       <div class="code-block"><pre><code>git config --global user.email "<span class="var" data-var="email" data-ph="you@example.com">you@example.com</span>"</code></pre><button type="button" class="copy-btn">Copy</button></div>
       <p class="code-note">Use the same email as your GitHub account. If you filled in the boxes at the top of this page, these commands already have your info in them.</p>
@@ -406,19 +406,12 @@ does not provide shell access.</code></pre><button type="button" class="copy-btn
 <section class="stage" id="stage-3">
   <div class="stage-head"><span class="stage-num">STAGE 3</span><h2>Get the team repo onto your laptop</h2></div>
   <div class="stage-intro">
-    <p>Cloning downloads a copy of the team's repository, including its whole history. You'll clone <code>profile-card</code>, where every member adds their own profile page.</p>
+    <p>Cloning downloads the practice repo and its history. Each member adds one text file in <code>names/</code>.</p>
   </div>
 
   <div class="step-card">
-    <div class="step-head">
-      <span class="step-num"></span>
-      <span class="step-title">Accept your invite to the repo</span>
-      <label class="step-done"><input type="checkbox" data-step="s3-invite"> Done</label>
-    </div>
-    <div class="step-body">
-      <p>Simon adds each member as a collaborator on <a href="https://github.com/simonteague6/profile-card" target="_blank" rel="noopener noreferrer">simonteague6/profile-card</a>. GitHub emails you an invitation; check your inbox (and spam), or look at <a href="https://github.com/notifications" target="_blank" rel="noopener noreferrer">github.com/notifications</a>, and click <strong>Accept</strong>.</p>
-      <p>No invite? Message Simon with your GitHub username. You can keep going; you'll need the invite accepted before Stage 7 (push).</p>
-    </div>
+    <div class="step-head"><span class="step-num"></span><span class="step-title">Accept your repo invite</span><label class="step-done"><input type="checkbox" data-step="s3-invite"> Done</label></div>
+    <div class="step-body"><p>Send Simon your GitHub username. He'll invite you as a collaborator on <a href="https://github.com/simonteague6/rc-first-pr-practice" target="_blank" rel="noopener noreferrer">the practice repo</a>. Accept the invite in your email or at <a href="https://github.com/notifications" target="_blank" rel="noopener noreferrer">GitHub notifications</a> before pushing in Stage 7. You can clone the repo while you wait.</p></div>
   </div>
 
   <div class="step-card">
@@ -428,13 +421,13 @@ does not provide shell access.</code></pre><button type="button" class="copy-btn
       <label class="step-done"><input type="checkbox" data-step="s3-clone"> Done</label>
     </div>
     <div class="step-body">
-      <p>In your terminal<span data-os="win"> (inside Ubuntu; type <code>wsl</code> then <code>cd ~</code> if you opened Windows Terminal)</span>, run these one at a time:</p>
+      <p>In your terminal<span data-os="win"> (in VS Code connected to WSL: Ubuntu)</span>, run these one at a time:</p>
       <div class="code-block"><pre><code>mkdir -p ~/projects</code></pre><button type="button" class="copy-btn">Copy</button></div>
-      <div class="code-block"><pre><code>cd ~/projects &amp;&amp; git clone git@github.com:simonteague6/profile-card.git</code></pre><button type="button" class="copy-btn">Copy</button></div>
+      <div class="code-block"><pre><code>cd ~/projects &amp;&amp; git clone git@github.com:simonteague6/rc-first-pr-practice.git</code></pre><button type="button" class="copy-btn">Copy</button></div>
       <p class="code-note">The first command makes a <code>projects</code> folder in your home directory (it's fine if it already exists). The second downloads the repo into it.</p>
       <div class="callout callout-warn" data-os="win"><span class="ico">⚠️</span>
         <div><span class="label">Windows: always clone in the terminal</span>
-        Don't clone with Zed's command palette; it opens a Windows file picker that puts the project on the wrong filesystem. Use the terminal commands above.</div>
+        Keep the repo in Ubuntu, not under <code>/mnt/c/</code>. Check for <strong>WSL: Ubuntu</strong> in VS Code before cloning.</div>
       </div>
     </div>
   </div>
@@ -442,22 +435,20 @@ does not provide shell access.</code></pre><button type="button" class="copy-btn
   <div class="step-card">
     <div class="step-head">
       <span class="step-num"></span>
-      <span class="step-title">Open the project in Zed</span>
+      <span class="step-title">Open the project in VS Code</span>
       <label class="step-done"><input type="checkbox" data-step="s3-open"> Done</label>
     </div>
     <div class="step-body">
-      <div class="code-block"><pre><code>cd ~/projects/profile-card &amp;&amp; zed .</code></pre><button type="button" class="copy-btn">Copy</button></div>
-      <p>You should see <code>index.html</code>, <code>style.css</code>, and <code>README.md</code> in Zed's file tree (the file panel on the side of the window). That's the existing example card.</p>
-      <p data-os="win" class="code-note">If <code>zed</code> isn't found inside Ubuntu, open Zed on Windows instead, use <strong>Open Folder</strong> through the <strong>WSL Remote</strong>, and pick <code>~/projects/profile-card</code>.</p>
-      <p data-os="mac" class="code-note">If it says <code>zed: command not found</code>, open Zed, press <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, run <code>install cli</code>, and try again.</p>
+      <div class="code-block"><pre><code>cd ~/projects/rc-first-pr-practice &amp;&amp; code .</code></pre><button type="button" class="copy-btn">Copy</button></div>
+      <p>You should see <code>README.md</code> and the <code>names</code> folder in the Explorer.</p>
+      <p data-os="win" class="code-note">If <code>code</code> isn't found, check that VS Code is installed on Windows with <strong>Add to PATH</strong> enabled, and that the WSL extension is installed.</p>
+      <p data-os="mac" class="code-note">If <code>code</code> isn't found, use the Command Palette in VS Code to run <strong>Shell Command: Install 'code' command in PATH</strong>, then open a new terminal.</p>
       <details class="fold">
         <summary><span class="ico">🔍</span> Curious? See the repo's history</summary>
         <div class="fold-body">
-          <p>This repo was built commit by commit, with two branches that split off and merged back. Either of these shows you that shape, pick whichever you prefer:</p>
-          <p><strong>In Zed:</strong> open the command palette (<kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on macOS, <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on Windows), type <code>git graph: open</code>, and press Enter. You get an interactive graph in a panel.</p>
-          <p><strong>In the terminal:</strong> run this to draw the same graph as text:</p>
+          <p>This repo starts small. Run this to see its commits as members add files:</p>
           <div class="code-block"><pre><code>git log --oneline --graph --all</code></pre><button type="button" class="copy-btn">Copy</button></div>
-          <p>You're about to add your own branch to that picture.</p>
+          <p>Your commit will appear here after it is merged.</p>
         </div>
       </details>
     </div>
@@ -478,7 +469,7 @@ does not provide shell access.</code></pre><button type="button" class="copy-btn
       <label class="step-done"><input type="checkbox" data-step="s4-status"> Done</label>
     </div>
     <div class="step-body">
-      <p>From now on, run everything in Zed's built-in terminal (<kbd>Ctrl</kbd>+<kbd>`</kbd>); it's already inside the project folder.</p>
+      <p>From now on, run everything in VS Code's built-in terminal (<kbd>Ctrl</kbd>+<kbd>`</kbd>); it's already inside the project folder.</p>
       <div class="code-block"><pre><code>git status</code></pre><button type="button" class="copy-btn">Copy</button></div>
       <p>You want to see <code>On branch main</code> and <code>nothing to commit, working tree clean</code>. That means you're starting from a clean copy of the team's code.</p>
     </div>
@@ -492,95 +483,25 @@ does not provide shell access.</code></pre><button type="button" class="copy-btn
     </div>
     <div class="step-body">
       <p>Two things are happening: create the branch, then move onto it. The one-command version does both:</p>
-      <div class="code-block"><pre><code>git switch -c feature/add-<span class="var" data-var="user" data-ph="your-username">your-username</span>-card</code></pre><button type="button" class="copy-btn">Copy</button></div>
+      <div class="code-block"><pre><code>git switch -c feature/add-<span class="var" data-var="user" data-ph="your-username">your-username</span>-name</code></pre><button type="button" class="copy-btn">Copy</button></div>
       <p>Under the hood, that's the same as these two commands run one after another:</p>
-      <div class="code-block"><pre><code>git branch feature/add-<span class="var" data-var="user" data-ph="your-username">your-username</span>-card</code></pre><button type="button" class="copy-btn">Copy</button></div>
-      <div class="code-block"><pre><code>git switch feature/add-<span class="var" data-var="user" data-ph="your-username">your-username</span>-card</code></pre><button type="button" class="copy-btn">Copy</button></div>
-      <p><code>git branch</code> creates the branch; <code>git switch</code> moves you onto it. <code>switch -c</code> is the shortcut for both. The <code>feature/</code> prefix is the naming style this repo already uses. Zed's top bar now shows your branch name instead of <code>main</code>.</p>
+      <div class="code-block"><pre><code>git branch feature/add-<span class="var" data-var="user" data-ph="your-username">your-username</span>-name</code></pre><button type="button" class="copy-btn">Copy</button></div>
+      <div class="code-block"><pre><code>git switch feature/add-<span class="var" data-var="user" data-ph="your-username">your-username</span>-name</code></pre><button type="button" class="copy-btn">Copy</button></div>
+      <p><code>git branch</code> creates the branch; <code>git switch</code> moves you onto it. <code>switch -c</code> is the shortcut for both. The <code>feature/</code> prefix makes the branch easy to spot. VS Code shows your branch in the bottom-left status bar.</p>
     </div>
   </div>
 </section>
 
 <!-- ============ STAGE 5 ============ -->
 <section class="stage" id="stage-5">
-  <div class="stage-head"><span class="stage-num">STAGE 5</span><h2>Build your profile card</h2></div>
+  <div class="stage-head"><span class="stage-num">STAGE 5</span><h2>Add your text file</h2></div>
   <div class="stage-intro">
-    <p>Your first contribution is one HTML file: your own page in a <code>cards</code> folder, named after your GitHub username so nobody edits the same file.</p>
+    <p>Your first contribution is one text file in <code>names/</code>. The point is to practice branching, committing, and opening a PR.</p>
   </div>
 
   <div class="step-card">
-    <div class="step-head">
-      <span class="step-num"></span>
-      <span class="step-title">Make the cards folder</span>
-      <label class="step-done"><input type="checkbox" data-step="s5-folder"> Done</label>
-    </div>
-    <div class="step-body">
-      <div class="code-block"><pre><code>mkdir -p cards</code></pre><button type="button" class="copy-btn">Copy</button></div>
-      <p class="code-note">If someone's card was merged before yours, the folder already exists; <code>-p</code> makes that a non-issue.</p>
-    </div>
-  </div>
-
-  <div class="step-card">
-    <div class="step-head">
-      <span class="step-num"></span>
-      <span class="step-title">Create your file</span>
-      <label class="step-done"><input type="checkbox" data-step="s5-file"> Done</label>
-    </div>
-    <div class="step-body">
-      <div class="code-block"><pre><code>touch cards/<span class="var" data-var="user" data-ph="your-username">your-username</span>.html</code></pre><button type="button" class="copy-btn">Copy</button></div>
-      <p>Now click your new file in Zed's file tree (inside <code>cards</code>) to open it. It's empty; you'll fill it next.</p>
-    </div>
-  </div>
-
-  <div class="step-card">
-    <div class="step-head">
-      <span class="step-num"></span>
-      <span class="step-title">Paste the template and make it yours</span>
-      <label class="step-done"><input type="checkbox" data-step="s5-edit"> Done</label>
-    </div>
-    <div class="step-body">
-      <p>Copy this into your empty file. It follows the same structure as the repo's existing <code>index.html</code> and reuses the team's stylesheet:</p>
-      <div class="code-block"><pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-  &lt;link rel="stylesheet" href="../style.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div class="card"&gt;
-    &lt;h1&gt;Hello, I'm <span class="var" data-var="name" data-ph="YOUR NAME">YOUR NAME</span>&lt;/h1&gt;
-    &lt;p class="bio"&gt;One sentence about who you are.&lt;/p&gt;
-    &lt;p class="goals"&gt;One sentence about what you want to learn this semester.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre><button type="button" class="copy-btn">Copy</button></div>
-      <p>Then edit the two sentences so they're actually about you. Save with <span data-os="mac"><kbd>Cmd</kbd>+<kbd>S</kbd></span><span data-os="win"><kbd>Ctrl</kbd>+<kbd>S</kbd></span>.</p>
-    </div>
-  </div>
-
-  <div class="step-card">
-    <div class="step-head">
-      <span class="step-num"></span>
-      <span class="step-title">Look at it in your browser</span>
-      <label class="step-done"><input type="checkbox" data-step="s5-preview"> Done</label>
-    </div>
-    <div class="step-body">
-      <div class="os-tabs">
-        <div class="os-tabbar" role="group" aria-label="Choose your operating system">
-          <button type="button" data-os-tab="mac">macOS</button>
-          <button type="button" data-os-tab="win">Windows (Ubuntu)</button>
-        </div>
-        <div class="os-pane" data-os="mac">
-          <div class="code-block"><pre><code>open cards/<span class="var" data-var="user" data-ph="your-username">your-username</span>.html</code></pre><button type="button" class="copy-btn">Copy</button></div>
-        </div>
-        <div class="os-pane" data-os="win">
-          <div class="code-block"><pre><code>explorer.exe cards</code></pre><button type="button" class="copy-btn">Copy</button></div>
-          <p class="code-note">That opens the folder in File Explorer; double-click your file to open it in your browser.</p>
-        </div>
-      </div>
-      <p>You should see a small white card with your name on a gray background. If it looks unstyled (plain black text on white), check that the stylesheet line says <code>../style.css</code>, with the two dots.</p>
-    </div>
+    <div class="step-head"><span class="step-num"></span><span class="step-title">Create your text file</span><label class="step-done"><input type="checkbox" data-step="s5-file"> Done</label></div>
+    <div class="step-body"><p>In the VS Code Explorer, right-click the <code>names</code> folder, choose <strong>New File</strong>, and name it <code><span class="var" data-var="user" data-ph="your-username">your-username</span>.txt</code>. Use your GitHub username so it won't collide with someone else's file.</p><p>Type a sentence about yourself, or anything you like, then save with <span data-os="mac"><kbd>Cmd</kbd>+<kbd>S</kbd></span><span data-os="win"><kbd>Ctrl</kbd>+<kbd>S</kbd></span>. The words aren't being graded; you're practicing the Git workflow.</p></div>
   </div>
 </section>
 
@@ -610,7 +531,7 @@ does not provide shell access.</code></pre><button type="button" class="copy-btn
       <label class="step-done"><input type="checkbox" data-step="s6-add"> Done</label>
     </div>
     <div class="step-body">
-      <div class="code-block"><pre><code>git add cards/<span class="var" data-var="user" data-ph="your-username">your-username</span>.html</code></pre><button type="button" class="copy-btn">Copy</button></div>
+      <div class="code-block"><pre><code>git add names/<span class="var" data-var="user" data-ph="your-username">your-username</span>.txt</code></pre><button type="button" class="copy-btn">Copy</button></div>
       <p>Run <code>git status</code> again if you want to check; the file turns green, meaning it's staged and ready to commit.</p>
     </div>
   </div>
@@ -622,8 +543,8 @@ does not provide shell access.</code></pre><button type="button" class="copy-btn
       <label class="step-done"><input type="checkbox" data-step="s6-commit"> Done</label>
     </div>
     <div class="step-body">
-      <div class="code-block"><pre><code>git commit -m "feat: add <span class="var" data-var="user" data-ph="your-username">your-username</span>'s profile card"</code></pre><button type="button" class="copy-btn">Copy</button></div>
-      <p>The <code>-m</code> part is the message, a short note about what this snapshot contains. The <code>feat:</code> prefix means "this adds a feature," matching this repo's existing history.</p>
+      <div class="code-block"><pre><code>git commit -m "feat: add <span class="var" data-var="user" data-ph="your-username">your-username</span>'s text file"</code></pre><button type="button" class="copy-btn">Copy</button></div>
+      <p>The <code>-m</code> part is the message, a short note about what this snapshot contains. The <code>feat:</code> prefix tells readers this commit adds something.</p>
     </div>
   </div>
 </section>
@@ -642,7 +563,7 @@ does not provide shell access.</code></pre><button type="button" class="copy-btn
       <label class="step-done"><input type="checkbox" data-step="s7-push"> Done</label>
     </div>
     <div class="step-body">
-      <div class="code-block"><pre><code>git push -u origin feature/add-<span class="var" data-var="user" data-ph="your-username">your-username</span>-card</code></pre><button type="button" class="copy-btn">Copy</button></div>
+      <div class="code-block"><pre><code>git push -u origin feature/add-<span class="var" data-var="user" data-ph="your-username">your-username</span>-name</code></pre><button type="button" class="copy-btn">Copy</button></div>
       <p><code>origin</code> is git's name for the GitHub copy of the repo, and <code>-u</code> links your local branch to it (you only need <code>-u</code> this first time).</p>
       <p>In the output, GitHub prints a <strong>"Create a pull request"</strong> link; that's your cue for the next stage. If the push is rejected instead, see the troubleshooting section at the bottom.</p>
     </div>
@@ -663,7 +584,7 @@ does not provide shell access.</code></pre><button type="button" class="copy-btn
       <label class="step-done"><input type="checkbox" data-step="s8-open"> Done</label>
     </div>
     <div class="step-body">
-      <p>Go to <a href="https://github.com/simonteague6/profile-card" target="_blank" rel="noopener noreferrer">github.com/simonteague6/profile-card</a>. There's a yellow banner with your branch name and a <strong>"Compare &amp; pull request"</strong> button; click it.</p>
+      <p>Go to <a href="https://github.com/simonteague6/rc-first-pr-practice" target="_blank" rel="noopener noreferrer">github.com/simonteague6/rc-first-pr-practice</a>. There's a yellow banner with your branch name and a <strong>"Compare &amp; pull request"</strong> button; click it.</p>
       <p>No banner? Click the <strong>Pull requests</strong> tab → <strong>New pull request</strong>. Set <strong>base</strong> to <code>main</code> and <strong>compare</strong> to your branch, then <strong>Create pull request</strong>.</p>
     </div>
   </div>
@@ -675,8 +596,8 @@ does not provide shell access.</code></pre><button type="button" class="copy-btn
       <label class="step-done"><input type="checkbox" data-step="s8-fill"> Done</label>
     </div>
     <div class="step-body">
-      <p>Title: <code>Add <span class="var" data-var="name" data-ph="YOUR NAME">YOUR NAME</span>'s profile card</code></p>
-      <p>Description: a sentence or two is plenty. What you added, and anything you're unsure about. For example: <em>"Adds my profile card in cards/. Let me know if I got the file location right."</em></p>
+      <p>Title: <code>Add <span class="var" data-var="name" data-ph="YOUR NAME">YOUR NAME</span>'s text file</code></p>
+      <p>Description: a sentence or two is plenty. What you added, and anything you're unsure about. For example: <em>"Adds my text file in names/. Let me know if I got the file location right."</em></p>
     </div>
   </div>
 
@@ -718,8 +639,8 @@ does not provide shell access.</code></pre><button type="button" class="copy-btn
       <label class="step-done"><input type="checkbox" data-step="s9-fix"> Done</label>
     </div>
     <div class="step-body">
-      <p>Back in Zed, on the <strong>same branch</strong> (check the top bar; no new branch needed), edit your file, save, then:</p>
-      <div class="code-block"><pre><code>git add cards/<span class="var" data-var="user" data-ph="your-username">your-username</span>.html</code></pre><button type="button" class="copy-btn">Copy</button></div>
+      <p>Back in VS Code, on the <strong>same branch</strong> (check the bottom-left status bar; no new branch needed), edit your file, save, then:</p>
+      <div class="code-block"><pre><code>git add names/<span class="var" data-var="user" data-ph="your-username">your-username</span>.txt</code></pre><button type="button" class="copy-btn">Copy</button></div>
       <div class="code-block"><pre><code>git commit -m "fix: address review feedback"</code></pre><button type="button" class="copy-btn">Copy</button></div>
       <div class="code-block"><pre><code>git push</code></pre><button type="button" class="copy-btn">Copy</button></div>
       <p class="code-note">No <code>-u</code> or branch name this time; git remembers from Stage 7. The PR updates the moment you push.</p>
@@ -733,10 +654,10 @@ does not provide shell access.</code></pre><button type="button" class="copy-btn
       <label class="step-done"><input type="checkbox" data-step="s9-merge"> Done</label>
     </div>
     <div class="step-body">
-      <p>When your PR is merged, GitHub shows a purple <strong>Merged</strong> badge. Your card is now part of the team's <code>main</code>. Bring your laptop's copy up to date:</p>
+      <p>When your PR is merged, GitHub shows a purple <strong>Merged</strong> badge. Your file is now part of the team's <code>main</code>. Bring your laptop's copy up to date:</p>
       <div class="code-block"><pre><code>git switch main &amp;&amp; git pull</code></pre><button type="button" class="copy-btn">Copy</button></div>
       <p>Your branch did its job and can be deleted (this only removes the local copy; the history is safe in <code>main</code>):</p>
-      <div class="code-block"><pre><code>git branch -d feature/add-<span class="var" data-var="user" data-ph="your-username">your-username</span>-card</code></pre><button type="button" class="copy-btn">Copy</button></div>
+      <div class="code-block"><pre><code>git branch -d feature/add-<span class="var" data-var="user" data-ph="your-username">your-username</span>-name</code></pre><button type="button" class="copy-btn">Copy</button></div>
       <p>That's the full loop: branch, build, commit, push, PR, review, merge. You've just done what professional teams do on every feature.</p>
     </div>
   </div>
@@ -760,7 +681,7 @@ does not provide shell access.</code></pre><button type="button" class="copy-btn
           <div class="code-block"><pre><code>cat ~/.ssh/id_ed25519.pub</code></pre><button type="button" class="copy-btn">Copy</button></div>
           Delete the old key on GitHub and add this one again.</li>
         <li><strong>Cloned with the wrong URL?</strong> Run <code>git remote -v</code> inside the project. If it shows <code>https://github.com/...</code>, switch it to SSH:
-          <div class="code-block"><pre><code>git remote set-url origin git@github.com:simonteague6/profile-card.git</code></pre><button type="button" class="copy-btn">Copy</button></div></li>
+          <div class="code-block"><pre><code>git remote set-url origin git@github.com:simonteague6/rc-first-pr-practice.git</code></pre><button type="button" class="copy-btn">Copy</button></div></li>
       </ol>
       <p>Then test again with <code>ssh -T git@github.com</code>.</p>
     </div>
@@ -770,12 +691,12 @@ does not provide shell access.</code></pre><button type="button" class="copy-btn
     <summary><span class="ico">😬</span> "I committed to main by accident"</summary>
     <div class="fold-body">
       <p>Very fixable, and nothing is lost. You made your commit on <code>main</code> instead of a branch. This recipe moves your work to a proper branch and puts <code>main</code> back the way it was. Run the four commands one at a time:</p>
-      <div class="code-block"><pre><code>git switch -c feature/add-<span class="var" data-var="user" data-ph="your-username">your-username</span>-card</code></pre><button type="button" class="copy-btn">Copy</button></div>
+      <div class="code-block"><pre><code>git switch -c feature/add-<span class="var" data-var="user" data-ph="your-username">your-username</span>-name</code></pre><button type="button" class="copy-btn">Copy</button></div>
       <p class="code-note">Creates your branch right where you are; your commit comes with it. Your work is now safe.</p>
       <div class="code-block"><pre><code>git switch main</code></pre><button type="button" class="copy-btn">Copy</button></div>
       <div class="code-block"><pre><code>git reset --hard origin/main</code></pre><button type="button" class="copy-btn">Copy</button></div>
       <p class="code-note">Rewinds your local <code>main</code> to match GitHub's, as if the accident never happened. (Careful: this discards any <em>uncommitted</em> edits on main, so commit anything you care about first.)</p>
-      <div class="code-block"><pre><code>git switch feature/add-<span class="var" data-var="user" data-ph="your-username">your-username</span>-card</code></pre><button type="button" class="copy-btn">Copy</button></div>
+      <div class="code-block"><pre><code>git switch feature/add-<span class="var" data-var="user" data-ph="your-username">your-username</span>-name</code></pre><button type="button" class="copy-btn">Copy</button></div>
       <p class="code-note">Back on your branch, with your commit intact. Continue from Stage 7.</p>
     </div>
   </details>
@@ -783,17 +704,17 @@ does not provide shell access.</code></pre><button type="button" class="copy-btn
   <details class="fold trouble">
     <summary><span class="ico">⚔️</span> Merge conflict: "CONFLICT" or GitHub says the branch can't be merged</summary>
     <div class="fold-body">
-      <p>A conflict means you and someone else changed the <em>same lines</em> of the <em>same file</em>, and git needs a human to decide. It's rare here, since everyone adds their own file in <code>cards/</code>, but if it happens:</p>
+      <p>A conflict means you and someone else changed the <em>same lines</em> of the <em>same file</em>, and git needs a human to decide. It's rare here, since everyone adds their own file in <code>names/</code>, but if it happens:</p>
       <ol>
         <li>On your branch, pull in the latest <code>main</code>:
           <div class="code-block"><pre><code>git fetch origin &amp;&amp; git merge origin/main</code></pre><button type="button" class="copy-btn">Copy</button></div></li>
-        <li>Git tells you which files conflict. Open them in Zed; you'll see markers like this:
+        <li>Git tells you which files conflict. Open them in VS Code; you'll see markers like this:
           <div class="code-block"><pre><code class="term-output">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 your version of the line
 =======
 their version of the line
 &gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/main</code></pre><button type="button" class="copy-btn">Copy</button></div></li>
-        <li>Edit the file so it reads how it <em>should</em>: keep yours, keep theirs, or blend them. Then delete the <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> lines. Zed highlights conflicts and offers one-click "keep" buttons.</li>
+        <li>Edit the file so it reads how it <em>should</em>: keep yours, keep theirs, or blend them. Then delete the <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> lines. VS Code highlights conflicts and offers buttons to accept either change.</li>
         <li>Then seal it and push:
           <div class="code-block"><pre><code>git add . &amp;&amp; git commit -m "fix: resolve merge conflict" &amp;&amp; git push</code></pre><button type="button" class="copy-btn">Copy</button></div></li>
       </ol>
@@ -804,7 +725,7 @@ their version of the line
     <summary><span class="ico">🚫</span> Push rejected</summary>
     <div class="fold-body">
       <p>Read the error message; it's one of two situations:</p>
-      <p><strong>"Permission to simonteague6/profile-card.git denied"</strong> or a 403 error → you're not a collaborator on the repo yet. Check <a href="https://github.com/notifications" target="_blank" rel="noopener noreferrer">github.com/notifications</a> and your email for the invite (Stage 3, step 1), accept it, and push again. No invite anywhere? Send Simon your GitHub username.</p>
+      <p><strong>"Permission to simonteague6/rc-first-pr-practice.git denied"</strong> or a 403 error → you're not a collaborator on the repo yet. Check <a href="https://github.com/notifications" target="_blank" rel="noopener noreferrer">github.com/notifications</a> and your email for the invite (Stage 3, step 1), accept it, and push again. No invite anywhere? Send Simon your GitHub username.</p>
       <p><strong>"[rejected] ... failed to push some refs"</strong> with a hint about "fetch first" → GitHub has commits on your branch that your laptop doesn't (this can happen if you edited a file on the GitHub website, or pushed from another machine). Download them, then push again:</p>
       <div class="code-block"><pre><code>git pull --no-rebase &amp;&amp; git push</code></pre><button type="button" class="copy-btn">Copy</button></div>
       <p>If the pull triggers a conflict, the merge-conflict entry above takes over. If nothing works, screenshot the output and ask; this one's worth a second pair of eyes.</p>
@@ -814,34 +735,32 @@ their version of the line
   <details class="fold trouble" data-os="win">
     <summary><span class="ico">🐧</span> Commands say "not recognized" or nothing from this page works <span class="os-flag">Windows</span></summary>
     <div class="fold-body">
-      <p>You're almost certainly in PowerShell, not Ubuntu. Type <code>wsl</code>, press Enter, then <code>cd ~</code>. Every command on this page assumes you're inside Ubuntu. (Zed's built-in terminal is already inside Ubuntu when you open the project via WSL Remote.)</p>
+      <p>Open VS Code connected to <strong>WSL: Ubuntu</strong> (check the bottom-left status bar), then open its terminal with <kbd>Ctrl</kbd>+<kbd>`</kbd>. The commands on this page run inside Ubuntu.</p>
     </div>
   </details>
 
   <details class="fold trouble" data-os="mac">
-    <summary><span class="ico">🔍</span> "zed: command not found" <span class="os-flag">macOS</span></summary>
-    <div class="fold-body">
-      <p>The <code>zed</code> terminal command isn't installed yet (common if you downloaded Zed directly instead of using Homebrew). Open Zed, press <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, type <code>install cli</code>, and run it. Works immediately; no restart needed.</p>
-    </div>
+    <summary><span class="ico">🔍</span> "code: command not found" <span class="os-flag">macOS</span></summary>
+    <div class="fold-body"><p>In VS Code, open the Command Palette with <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, search for <strong>Shell Command: Install 'code' command in PATH</strong>, then open a new terminal and try <code>code .</code> again.</p></div>
   </details>
 </section>
 
 <!-- ============ finish ============ -->
 <div class="finish" id="finish">
   <h2 id="finishTitle">All steps checked = your first merged PR 🎉</h2>
-  <p>When your progress bar hits 100%, you've shipped code to a shared team repo the same way professional engineers do.
+  <p>Check off the steps as you go. A full progress bar means you've practiced the branch, commit, review, and merge workflow.
   Next up: the <a href="index.html#next-steps">Setup Guide's Next Steps</a> has hand-picked resources to keep going.</p>
 </div>
 
 </main>
 
 <footer>
-  Rowdy Creators · UTSA. Built for brand-new members. Works offline; your progress is saved in this browser only.
+  Rowdy Creators · UTSA. Your progress is saved in this browser only.
 </footer>
 
 <script>
 (function () {
-  var KEY = 'rc-onboarding-v1';
+  var KEY = 'rc-onboarding-v2';
   var state = { os: 'mac', steps: {}, vars: { name: '', email: '', user: '' } };
 
   // ---- load / save ----
@@ -884,7 +803,7 @@ their version of the line
   // ---- personalization variables ----
   function sanitize(kind, v) {
     v = v.replace(/["\\]/g, '').trim();
-    if (kind === 'user') v = v.replace(/[@\s]/g, '');
+    if (kind === 'user') v = v.replace(/[^a-zA-Z0-9-]/g, '');
     return v;
   }
   function applyVars() {

@@ -6,7 +6,7 @@
         <title>Rowdy Creators Setup Guide</title>
         <meta
             name="description"
-            content="From a fresh laptop to a working dev environment: Zed, Zsh, and Oh My Zsh on macOS or Windows."
+            content="From a fresh laptop to a working dev environment: VS Code and Git on macOS or Windows."
         />
         <meta name="theme-color" content="#080808" />
         <meta name="author" content="Rowdy Creators" />
@@ -15,7 +15,7 @@
         <meta property="og:title" content="Rowdy Creators Setup Guide" />
         <meta
             property="og:description"
-            content="From a fresh laptop to a working dev environment: Zed, Zsh, and Oh My Zsh on macOS or Windows."
+            content="From a fresh laptop to a working dev environment: VS Code and Git on macOS or Windows."
         />
         <meta property="og:type" content="article" />
         <meta property="og:image" content="assets/og-cover.png" />
@@ -23,7 +23,7 @@
         <meta name="twitter:title" content="Rowdy Creators Setup Guide" />
         <meta
             name="twitter:description"
-            content="From a fresh laptop to a working dev environment: Zed, Zsh, and Oh My Zsh on macOS or Windows."
+            content="From a fresh laptop to a working dev environment: VS Code and Git on macOS or Windows."
         />
         <meta name="twitter:image" content="assets/og-cover.png" />
 
@@ -93,7 +93,7 @@
                 "@context": "https://schema.org",
                 "@type": "TechArticle",
                 "headline": "Rowdy Creators Setup Guide",
-                "description": "From a fresh laptop to a working dev environment: Zed, Zsh, and Oh My Zsh on macOS or Windows.",
+                "description": "From a fresh laptop to a working dev environment: VS Code and Git on macOS or Windows.",
                 "inLanguage": "en"
             }
         </script>
@@ -819,10 +819,10 @@
                     <a href="#windows" class="transition hover:text-accent-400"
                         >Windows</a
                     >
-                    <a href="#in-zed" class="transition hover:text-accent-400"
-                        >In Zed</a
+                    <a href="#in-vscode" class="transition hover:text-accent-400"
+                        >In VS Code</a
                     >
-                    <a href="#zed-tour" class="transition hover:text-accent-400"
+                    <a href="#vscode-tour" class="transition hover:text-accent-400"
                         >Tour</a
                     >
                     <a
@@ -831,12 +831,12 @@
                         >Next Steps</a
                     >
                     <a
-                        href="https://zed.dev"
+                        href="https://code.visualstudio.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="flex items-center gap-1 transition hover:text-accent-400"
                     >
-                        zed.dev
+                        VS Code
                         <svg
                             class="h-3.5 w-3.5"
                             viewBox="0 0 24 24"
@@ -877,8 +877,7 @@
                     <p
                         class="mx-auto mt-6 max-w-2xl text-lg text-neutral-300 sm:text-xl"
                     >
-                        From a fresh laptop to a working dev environment: Zed,
-                        Zsh, and Oh My Zsh, on macOS or Windows.
+                        Set up VS Code and Git on macOS or Windows.
                     </p>
                     <div
                         class="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-4 sm:grid-cols-2"
@@ -945,7 +944,7 @@
                         </a>
                     </div>
                     <p class="mt-8 text-sm text-neutral-500">
-                        Both paths lead to the same place: everything from "Zed
+                        Both paths lead to the same place: everything from "VS Code
                         is open" onward is shared.
                     </p>
                 </div>
@@ -975,17 +974,17 @@
                         macOS
                     </h2>
                     <p class="mt-4 max-w-2xl text-neutral-400">
-                        Five steps to a working terminal and editor on macOS,
-                        then continue to the shared In-Zed setup.
+Three steps to a working terminal and editor on macOS,
+                        then continue to the shared VS Code setup.
                     </p>
                     <p class="mt-2 text-sm text-neutral-500">
                         Reference:
                         <a
                             class="body-link"
-                            href="https://zed.dev/docs/installation"
+                            href="https://code.visualstudio.com/docs/setup/mac"
                             target="_blank"
                             rel="noopener noreferrer"
-                            >Zed installation docs</a
+                            >VS Code setup docs</a
                         >
                     </p>
 
@@ -1080,8 +1079,8 @@
                                             Xcode CLI tools give you
                                             <code class="inline">git</code>,
                                             compilers, and other command-line
-                                            utilities that Homebrew and Oh My
-                                            Zsh depend on. Installing them first
+                                            utilities that other developer tools
+                                            depend on. Installing them first
                                             avoids "command not found" errors
                                             later.
                                         </p>
@@ -1094,14 +1093,12 @@
                         <div class="step-card">
                             <div class="flex items-start gap-4">
                                 <span class="step-num">2</span>
-                                <h3 class="step-title">Install Zed</h3>
+                                <h3 class="step-title">Install VS Code</h3>
                             </div>
                             <div class="step-body mt-4">
                                 <p>
-                                    There are two ways: Homebrew (recommended,
-                                    keeps Zed updated with
-                                    <code class="inline">brew upgrade</code>) or
-                                    a direct download.
+                                    Install with Homebrew if you already use it,
+                                    or download VS Code directly.
                                 </p>
                                 <details
                                     class="collapsible"
@@ -1208,7 +1205,7 @@
                                         </p>
                                         <p>With Homebrew installed:</p>
                                         <div class="code-block">
-                                            <pre><code>brew install --cask zed</code></pre>
+                                            <pre><code>brew install --cask visual-studio-code</code></pre>
                                             <button
                                                 type="button"
                                                 class="copy-btn"
@@ -1275,15 +1272,13 @@
                                             Visit
                                             <a
                                                 class="body-link"
-                                                href="https://zed.dev/download"
+                                                href="https://code.visualstudio.com/download"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                >zed.dev/download</a
+                                                >code.visualstudio.com/download</a
                                             >, download the
                                             <code class="inline">.dmg</code>,
-                                            open it, and drag Zed to
-                                            Applications. Faster, but you update
-                                            Zed manually.
+                                            open it, and drag Visual Studio Code to Applications. VS Code handles its own updates.
                                         </p>
                                     </div>
                                 </details>
@@ -1291,276 +1286,8 @@
                         </div>
 
                         <!-- macOS Step 3 -->
-                        <div class="step-card">
-                            <div class="flex items-start gap-4">
-                                <span class="step-num">3</span>
-                                <h3 class="step-title">Verify Zsh</h3>
-                            </div>
-                            <div class="step-body mt-4">
-                                <p>
-                                    macOS has used Zsh as the default shell
-                                    since Catalina. Run
-                                    <code class="inline">echo $SHELL</code> in
-                                    your terminal; you should see
-                                    <code class="inline">/bin/zsh</code>.
-                                </p>
-                                <details
-                                    class="collapsible"
-                                    data-severity="blue"
-                                >
-                                    <summary>
-                                        <svg
-                                            class="lead"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <circle cx="12" cy="12" r="10" />
-                                            <path d="M12 16v-4M12 8h.01" />
-                                        </svg>
-                                        <span class="label"
-                                            >If it's not Zsh</span
-                                        >
-                                        <svg
-                                            class="chev"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <path d="m6 9 6 6 6-6" />
-                                        </svg>
-                                    </summary>
-                                    <div class="content">
-                                        <div class="code-block">
-                                            <pre><code>chsh -s /bin/zsh</code></pre>
-                                            <button
-                                                type="button"
-                                                class="copy-btn"
-                                                aria-label="Copy command to clipboard"
-                                            >
-                                                <svg
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    stroke-width="2"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                >
-                                                    <rect
-                                                        x="9"
-                                                        y="9"
-                                                        width="13"
-                                                        height="13"
-                                                        rx="2"
-                                                    />
-                                                    <path
-                                                        d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
-                                                    />
-                                                </svg>
-                                                <span>Copy</span>
-                                            </button>
-                                        </div>
-                                        <p>
-                                            Close and reopen the terminal
-                                            afterward.
-                                        </p>
-                                    </div>
-                                </details>
-                            </div>
-                        </div>
-
-                        <!-- macOS Step 4 -->
-                        <div class="step-card">
-                            <div class="flex items-start gap-4">
-                                <span class="step-num">4</span>
-                                <h3 class="step-title">Install Oh My Zsh</h3>
-                            </div>
-                            <div class="step-body mt-4">
-                                <p>
-                                    A framework that gives your prompt a cleaner
-                                    theme, shows your current directory, and
-                                    adds helpful plugins.
-                                </p>
-                                <div class="code-block">
-                                    <pre><code>sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"</code></pre>
-                                    <button
-                                        type="button"
-                                        class="copy-btn"
-                                        aria-label="Copy command to clipboard"
-                                    >
-                                        <svg
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <rect
-                                                x="9"
-                                                y="9"
-                                                width="13"
-                                                height="13"
-                                                rx="2"
-                                            />
-                                            <path
-                                                d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
-                                            />
-                                        </svg>
-                                        <span>Copy</span>
-                                    </button>
-                                </div>
-                                <details
-                                    class="collapsible"
-                                    data-severity="blue"
-                                >
-                                    <summary>
-                                        <svg
-                                            class="lead"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <circle cx="12" cy="12" r="10" />
-                                            <path d="M12 16v-4M12 8h.01" />
-                                        </svg>
-                                        <span class="label">Why Oh My Zsh</span>
-                                        <svg
-                                            class="chev"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <path d="m6 9 6 6 6-6" />
-                                        </svg>
-                                    </summary>
-                                    <div class="content">
-                                        <p>
-                                            It replaces the bare shell prompt
-                                            with a themed one, highlights the
-                                            current directory and git branch,
-                                            and lets you enable plugins (syntax
-                                            highlighting, autosuggestions)
-                                            later.
-                                        </p>
-                                    </div>
-                                </details>
-                                <figure class="screenshot">
-                                    <img
-                                        src="assets/mac-oh-my-zsh.png"
-                                        alt="Oh My Zsh success screen"
-                                        loading="lazy"
-                                        decoding="async"
-                                        style="
-                                            border-radius: 0.5rem;
-                                            width: 100%;
-                                            border: 1px solid #1b1b1b;
-                                        "
-                                    />
-                                    <figcaption>
-                                        What the terminal looks like once Oh My
-                                        Zsh is installed.
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                        <!-- macOS Step 5 -->
-                        <div class="step-card">
-                            <div class="flex items-start gap-4">
-                                <span class="step-num">5</span>
-                                <h3 class="step-title">Open Zed</h3>
-                            </div>
-                            <div class="step-body mt-4">
-                                <p>
-                                    Launch Zed from Applications (or run
-                                    <code class="inline">zed</code> in the
-                                    terminal if Homebrew added it to your path).
-                                </p>
-                                <details
-                                    class="collapsible"
-                                    data-severity="blue"
-                                >
-                                    <summary>
-                                        <svg
-                                            class="lead"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <circle cx="12" cy="12" r="10" />
-                                            <path d="M12 16v-4M12 8h.01" />
-                                        </svg>
-                                        <span class="label"
-                                            >If
-                                            <code class="inline">zed</code>
-                                            isn't found in the terminal</span
-                                        >
-                                        <svg
-                                            class="chev"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <path d="m6 9 6 6 6-6" />
-                                        </svg>
-                                    </summary>
-                                    <div class="content">
-                                        <p>
-                                            Common if you installed via the
-                                            Quick Path (direct download) rather
-                                            than Homebrew: the
-                                            <code class="inline">zed</code>
-                                            command isn't added to your PATH
-                                            automatically. With Zed open, press
-                                            <code class="inline"
-                                                >Cmd+Shift+P</code
-                                            >
-                                            to open the command palette, type
-                                            <code class="inline"
-                                                >install cli</code
-                                            >, and run it. No terminal restart
-                                            needed; it takes effect immediately.
-                                        </p>
-                                        <figure class="screenshot">
-                                            <img
-                                                src="assets/mac-install-cli-binary.png"
-                                                alt="Zed command palette running cli: install cli binary"
-                                                loading="lazy"
-                                                decoding="async"
-                                                style="
-                                                    border-radius: 0.5rem;
-                                                    width: 100%;
-                                                    border: 1px solid #1b1b1b;
-                                                "
-                                            />
-                                            <figcaption>
-                                                Search "install cli" in the
-                                                command palette and run it.
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                </details>
-                            </div>
-                        </div>
+                        <div class="step-card"><div class="flex items-start gap-4"><span class="step-num">3</span><h3 class="step-title">Open VS Code</h3></div>
+                            <div class="step-body mt-4"><p>Launch VS Code from Applications. You'll open a project folder in the shared setup below.</p></div></div>
                     </div>
 
                     <div class="transition-card mt-8">
@@ -1575,8 +1302,8 @@
                             <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
                         <p class="text-neutral-300">
-                            You're set. Zed is open. Continue to the shared
-                            <a href="#in-zed">In-Zed Setup</a>.
+                            You're set. VS Code is open. Continue to the
+                            <a href="#in-vscode">shared setup</a>.
                         </p>
                     </div>
                 </div>
@@ -1606,157 +1333,20 @@
                         Windows
                     </h2>
                     <p class="mt-4 max-w-2xl text-neutral-400">
-                        Set up WSL, Zsh, and Oh My Zsh on Windows, then connect
-                        Zed to WSL and continue to the shared In-Zed setup.
+                        Set up WSL and Git on Windows, then connect VS Code to Ubuntu and continue to the shared setup.
                     </p>
                     <p class="mt-2 text-sm text-neutral-500">
                         Reference:
                         <a
                             class="body-link"
-                            href="https://zed.dev/docs/installation"
+                            href="https://code.visualstudio.com/docs/setup/windows"
                             target="_blank"
                             rel="noopener noreferrer"
-                            >Zed installation docs</a
+                            >VS Code setup docs</a
                         >
                     </p>
 
                     <div class="space-y-6 mt-8">
-                        <!-- Windows Step 0 -->
-                        <div class="step-card">
-                            <div class="flex items-start gap-4">
-                                <span class="step-num">0</span>
-                                <h3 class="step-title">Before You Start</h3>
-                            </div>
-                            <div class="step-body mt-4">
-                                <p>
-                                    Virtualization lets your computer run Linux
-                                    inside Windows. Enabling it is safe and
-                                    won't void your warranty.
-                                </p>
-                                <p>
-                                    First, make sure Windows is up to date:
-                                    Settings → Windows Update. Then check
-                                    virtualization is on: open Task Manager
-                                    (<code class="inline">Ctrl+Shift+Esc</code>)
-                                    → Performance tab → CPU → look for
-                                    "Virtualization: Enabled." If it says
-                                    Disabled, reboot into BIOS and enable it.
-                                </p>
-                                <figure class="screenshot">
-                                    <img
-                                        src="assets/win-11-task-manager.png"
-                                        alt="Task Manager Performance tab showing CPU virtualization enabled"
-                                        loading="lazy"
-                                        decoding="async"
-                                        style="
-                                            border-radius: 0.5rem;
-                                            width: 100%;
-                                            border: 1px solid #1b1b1b;
-                                        "
-                                    />
-                                    <figcaption>
-                                        Task Manager → Performance → CPU:
-                                        "Virtualization: Enabled" near the
-                                        bottom right.
-                                    </figcaption>
-                                </figure>
-                                <div
-                                    class="overflow-x-auto rounded-lg border border-ink-700"
-                                >
-                                    <table class="bios-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Brand</th>
-                                                <th>BIOS Setup Key</th>
-                                                <th>Boot Menu Key</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="brand">Dell</td>
-                                                <td class="key">F2</td>
-                                                <td class="key">F12</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="brand">HP</td>
-                                                <td class="key">Esc → F10</td>
-                                                <td class="key">Esc → F9</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="brand">Lenovo</td>
-                                                <td class="key">F1 or F2</td>
-                                                <td class="key">F12</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="brand">ASUS</td>
-                                                <td class="key">
-                                                    F2 (laptop) / Del (desktop)
-                                                </td>
-                                                <td class="key">
-                                                    Esc (laptop) / F8 (desktop)
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="brand">Acer</td>
-                                                <td class="key">F2</td>
-                                                <td class="key">F12</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="brand">Other</td>
-                                                <td class="key">Del or F2</td>
-                                                <td class="key">
-                                                    F8, F11, or F12
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <details
-                                    class="collapsible"
-                                    data-severity="blue"
-                                >
-                                    <summary>
-                                        <svg
-                                            class="lead"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <circle cx="12" cy="12" r="10" />
-                                            <path d="M12 16v-4M12 8h.01" />
-                                        </svg>
-                                        <span class="label"
-                                            >What is virtualization,
-                                            exactly?</span
-                                        >
-                                        <svg
-                                            class="chev"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <path d="m6 9 6 6 6-6" />
-                                        </svg>
-                                    </summary>
-                                    <div class="content">
-                                        <p>
-                                            WSL runs a real Linux kernel
-                                            alongside Windows, and that needs
-                                            CPU virtualization support turned on
-                                            in BIOS. It's a one-time setting;
-                                            you won't need to touch it again.
-                                        </p>
-                                    </div>
-                                </details>
-                            </div>
-                        </div>
-
                         <!-- Windows Step 1 -->
                         <div class="step-card">
                             <div class="flex items-start gap-4">
@@ -1822,7 +1412,76 @@
                                         <span>Copy</span>
                                     </button>
                                 </div>
-                                <p>Reboot when it finishes.</p>
+                                <p>If the install succeeds, reboot when prompted. If it fails or Ubuntu won't start afterward, open the help below.</p>
+                                <details class="collapsible" data-severity="blue">
+                                    <summary>
+                                        <svg class="lead" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 16v-4M12 8h.01" /></svg>
+                                        <span class="label">WSL won't install or Ubuntu won't start? Check virtualization</span>
+                                        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+                                    </summary>
+                                    <div class="content">
+                                        <p>Open Task Manager (<code class="inline">Ctrl+Shift+Esc</code>) → Performance → CPU and look for "Virtualization: Enabled." If it says Disabled, turn on virtualization in BIOS. Common setup keys are below:</p>
+                                        <figure class="screenshot">
+                                            <img
+                                                src="assets/win-11-task-manager.png"
+                                                alt="Task Manager Performance tab showing CPU virtualization enabled"
+                                                loading="lazy"
+                                                decoding="async"
+                                                style="
+                                                    border-radius: 0.5rem;
+                                                    width: 100%;
+                                                    border: 1px solid #1b1b1b;
+                                                "
+                                            />
+                                            <figcaption>
+                                                Task Manager → Performance → CPU:
+                                                "Virtualization: Enabled" near the
+                                                bottom right.
+                                            </figcaption>
+                                        </figure>
+                                        <div
+                                            class="overflow-x-auto rounded-lg border border-ink-700"
+                                        >
+                                            <table class="bios-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Brand</th>
+                                                        <th>BIOS Setup Key</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="brand">Dell</td>
+                                                        <td class="key">F2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="brand">HP</td>
+                                                        <td class="key">Esc → F10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="brand">Lenovo</td>
+                                                        <td class="key">F1 or F2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="brand">ASUS</td>
+                                                        <td class="key">
+                                                            F2 (laptop) / Del (desktop)
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="brand">Acer</td>
+                                                        <td class="key">F2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="brand">Other</td>
+                                                        <td class="key">Del or F2</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p>Restart and press the BIOS setup key as the computer starts. Find the virtualization setting (often called Intel VT-x or AMD SVM), enable it, save, and reboot. Then retry <code class="inline">wsl --install</code>. If Task Manager already says Enabled, check Windows Update or ask for help with the exact error message instead.</p>
+                                    </div>
+                                </details>
                                 <details
                                     class="collapsible"
                                     data-severity="blue"
@@ -1971,583 +1630,20 @@
                         </div>
 
                         <!-- Windows Step 4 -->
-                        <div class="step-card">
-                            <div class="flex items-start gap-4">
-                                <span class="step-num">4</span>
-                                <h3 class="step-title">Install Git and Zsh</h3>
-                            </div>
-                            <div class="step-body mt-4">
-                                <p>Oh My Zsh needs both of these.</p>
-                                <div class="code-block">
-                                    <pre><code>sudo apt install git zsh -y</code></pre>
-                                    <button
-                                        type="button"
-                                        class="copy-btn"
-                                        aria-label="Copy command to clipboard"
-                                    >
-                                        <svg
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <rect
-                                                x="9"
-                                                y="9"
-                                                width="13"
-                                                height="13"
-                                                rx="2"
-                                            />
-                                            <path
-                                                d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
-                                            />
-                                        </svg>
-                                        <span>Copy</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
+                        <div class="step-card"><div class="flex items-start gap-4"><span class="step-num">4</span><h3 class="step-title">Install Git in Ubuntu</h3></div>
+                            <div class="step-body mt-4"><p>Run this in the Ubuntu window:</p><div class="code-block"><pre><code>sudo apt install git -y</code></pre><button type="button" class="copy-btn" aria-label="Copy command to clipboard">Copy</button></div></div></div>
                         <!-- Windows Step 5 -->
-                        <div class="step-card">
-                            <div class="flex items-start gap-4">
-                                <span class="step-num">5</span>
-                                <h3 class="step-title">
-                                    Change Your Shell to Zsh
-                                </h3>
-                            </div>
-                            <div class="step-body mt-4">
-                                <p>
-                                    Make Zsh the default shell for your Ubuntu
-                                    user.
-                                </p>
-                                <div class="code-block">
-                                    <pre><code>chsh -s $(which zsh)</code></pre>
-                                    <button
-                                        type="button"
-                                        class="copy-btn"
-                                        aria-label="Copy command to clipboard"
-                                    >
-                                        <svg
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <rect
-                                                x="9"
-                                                y="9"
-                                                width="13"
-                                                height="13"
-                                                rx="2"
-                                            />
-                                            <path
-                                                d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
-                                            />
-                                        </svg>
-                                        <span>Copy</span>
-                                    </button>
-                                </div>
-                                <details
-                                    class="collapsible"
-                                    data-severity="red"
-                                    open
-                                >
-                                    <summary>
-                                        <svg
-                                            class="lead"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <path
-                                                d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
-                                            />
-                                            <path d="M12 9v4M12 17h.01" />
-                                        </svg>
-                                        <span class="label"
-                                            >If chsh fails with "operation not
-                                            permitted"</span
-                                        >
-                                        <svg
-                                            class="chev"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <path d="m6 9 6 6 6-6" />
-                                        </svg>
-                                    </summary>
-                                    <div class="content">
-                                        <p>
-                                            On WSL this error is common. Edit
-                                            <code class="inline"
-                                                >/etc/passwd</code
-                                            >
-                                            directly with Nano, a simple editor
-                                            with no Vim required.
-                                        </p>
-                                        <div class="code-block">
-                                            <pre><code>sudo nano /etc/passwd</code></pre>
-                                            <button
-                                                type="button"
-                                                class="copy-btn"
-                                                aria-label="Copy command to clipboard"
-                                            >
-                                                <svg
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    stroke-width="2"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                >
-                                                    <rect
-                                                        x="9"
-                                                        y="9"
-                                                        width="13"
-                                                        height="13"
-                                                        rx="2"
-                                                    />
-                                                    <path
-                                                        d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
-                                                    />
-                                                </svg>
-                                                <span>Copy</span>
-                                            </button>
-                                        </div>
-                                        <p>
-                                            Find the line that starts with your
-                                            username (scroll with arrow keys).
-                                            The last field on that line is the
-                                            shell path; it's probably
-                                            <code class="inline">/bin/bash</code
-                                            >. Change it to
-                                            <code class="inline"
-                                                >/usr/bin/zsh</code
-                                            >.
-                                        </p>
-                                        <ol class="list-decimal pl-5 space-y-1">
-                                            <li>
-                                                <code class="inline"
-                                                    >Ctrl+W</code
-                                                >, then type your username →
-                                                <code class="inline"
-                                                    >Enter</code
-                                                >
-                                                to jump to your line
-                                            </li>
-                                            <li>
-                                                Use
-                                                <code class="inline">→</code> /
-                                                <code class="inline">←</code> to
-                                                move to
-                                                <code class="inline"
-                                                    >/bin/bash</code
-                                                >
-                                                and change it to
-                                                <code class="inline"
-                                                    >/usr/bin/zsh</code
-                                                >
-                                            </li>
-                                            <li>
-                                                <code class="inline"
-                                                    >Ctrl+O</code
-                                                >
-                                                →
-                                                <code class="inline"
-                                                    >Enter</code
-                                                >
-                                                to save
-                                            </li>
-                                            <li>
-                                                <code class="inline"
-                                                    >Ctrl+X</code
-                                                >
-                                                to exit
-                                            </li>
-                                        </ol>
-                                        <p>
-                                            Close and reopen the terminal, then
-                                            check
-                                            <code class="inline"
-                                                >echo $SHELL</code
-                                            >
-                                            shows
-                                            <code class="inline"
-                                                >/usr/bin/zsh</code
-                                            >.
-                                        </p>
-                                        <p>
-                                            If that also fails, paste your error
-                                            into an AI chat:
-                                        </p>
-                                        <div class="code-block">
-                                            <pre><code>I'm on WSL Ubuntu trying to set my default shell to zsh.
-`chsh -s $(which zsh)` failed with "operation not permitted", and manually editing /etc/passwd with Nano also failed.
-Here are my error logs:
-[paste the full error output here]
-How do I set zsh as my default shell on WSL?</code></pre>
-                                            <button
-                                                type="button"
-                                                class="copy-btn"
-                                                aria-label="Copy command to clipboard"
-                                            >
-                                                <svg
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    stroke-width="2"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                >
-                                                    <rect
-                                                        x="9"
-                                                        y="9"
-                                                        width="13"
-                                                        height="13"
-                                                        rx="2"
-                                                    />
-                                                    <path
-                                                        d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
-                                                    />
-                                                </svg>
-                                                <span>Copy</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </details>
-                                <p>
-                                    Close the terminal, reopen it, and run
-                                    <code class="inline">wsl</code> to get back
-                                    into Ubuntu; the shell change takes effect
-                                    on the next launch.
-                                </p>
-                            </div>
-                        </div>
-
+                        <div class="step-card"><div class="flex items-start gap-4"><span class="step-num">5</span><h3 class="step-title">Install VS Code on Windows</h3></div>
+                            <div class="step-body mt-4"><p>Download and run the Windows installer from <a class="body-link" href="https://code.visualstudio.com/download" target="_blank" rel="noopener noreferrer">code.visualstudio.com/download</a>. If the installer offers <strong>Add to PATH</strong>, check it so the <code class="inline">code</code> command works from Ubuntu.</p></div></div>
                         <!-- Windows Step 6 -->
-                        <div class="step-card">
-                            <div class="flex items-start gap-4">
-                                <span class="step-num">6</span>
-                                <h3 class="step-title">
-                                    Skip the Zsh Setup Menu
-                                </h3>
-                            </div>
-                            <div class="step-body mt-4">
-                                <p>
-                                    The first time Zsh runs with no config file,
-                                    it shows a setup menu asking how you'd like
-                                    to configure it. Ignore it: the next step
-                                    (Oh My Zsh) will write your
-                                    <code class="inline">.zshrc</code> for you.
-                                </p>
-                                <p>
-                                    Press <code class="inline">0</code> to exit
-                                    and create an empty config file, then
-                                    continue.
-                                </p>
-                                <figure class="screenshot">
-                                    <img
-                                        src="assets/win-11-zsh-initial-config.png"
-                                        alt="Zsh new user configuration menu on first launch"
-                                        loading="lazy"
-                                        decoding="async"
-                                        style="
-                                            border-radius: 0.5rem;
-                                            width: 100%;
-                                            border: 1px solid #1b1b1b;
-                                        "
-                                    />
-                                    <figcaption>
-                                        This menu appears once; pressing 0 skips
-                                        it for good.
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
+                        <div class="step-card"><div class="flex items-start gap-4"><span class="step-num">6</span><h3 class="step-title">Install the WSL extension</h3></div>
+                            <div class="step-body mt-4"><p>Open VS Code on Windows. Click <strong>Extensions</strong> in the left sidebar (<code class="inline">Ctrl+Shift+X</code>), search for <strong>WSL</strong> by Microsoft, and click <strong>Install</strong>. Here's the <a class="body-link" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl" target="_blank" rel="noopener noreferrer">WSL extension on the Visual Studio Marketplace</a>.</p></div></div>
                         <!-- Windows Step 7 -->
-                        <div class="step-card">
-                            <div class="flex items-start gap-4">
-                                <span class="step-num">7</span>
-                                <h3 class="step-title">Install Oh My Zsh</h3>
-                            </div>
-                            <div class="step-body mt-4">
-                                <p>
-                                    Same installer as macOS. It gives you a
-                                    clearer prompt and directory display.
-                                </p>
-                                <div class="code-block">
-                                    <pre><code>sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"</code></pre>
-                                    <button
-                                        type="button"
-                                        class="copy-btn"
-                                        aria-label="Copy command to clipboard"
-                                    >
-                                        <svg
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <rect
-                                                x="9"
-                                                y="9"
-                                                width="13"
-                                                height="13"
-                                                rx="2"
-                                            />
-                                            <path
-                                                d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
-                                            />
-                                        </svg>
-                                        <span>Copy</span>
-                                    </button>
-                                </div>
-                                <figure class="screenshot">
-                                    <img
-                                        src="assets/win-11-oh-my-zsh.png"
-                                        alt="Oh My Zsh success screen"
-                                        loading="lazy"
-                                        decoding="async"
-                                        style="
-                                            border-radius: 0.5rem;
-                                            width: 100%;
-                                            border: 1px solid #1b1b1b;
-                                        "
-                                    />
-                                    <figcaption>
-                                        What success looks like inside Ubuntu on
-                                        WSL.
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                        <!-- Windows Step 8 -->
-                        <div class="step-card">
-                            <div class="flex items-start gap-4">
-                                <span class="step-num">8</span>
-                                <h3 class="step-title">
-                                    Install Zed on Windows
-                                </h3>
-                            </div>
-                            <div class="step-body mt-4">
-                                <p>
-                                    Visit
-                                    <a
-                                        class="body-link"
-                                        href="https://zed.dev/download"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        >zed.dev/download</a
-                                    >, download the Windows installer, and run
-                                    it.
-                                </p>
-                                <div class="callout callout-caution">
-                                    <svg
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <circle cx="12" cy="12" r="10" />
-                                        <path d="M12 8v4M12 16h.01" />
-                                    </svg>
-                                    <div>
-                                        <span class="label"
-                                            >This is the Windows app</span
-                                        >
-                                        <p class="text">
-                                            Don't try to install Zed from inside
-                                            Ubuntu/WSL. You install the Windows
-                                            app once, then connect it to WSL in
-                                            the next step.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Windows Step 9 -->
-                        <div class="step-card">
-                            <div class="flex items-start gap-4">
-                                <span class="step-num">9</span>
-                                <h3 class="step-title">
-                                    Connect via WSL Remote
-                                </h3>
-                            </div>
-                            <div class="step-body mt-4">
-                                <p>
-                                    Open Zed (the Windows app). To work on Linux
-                                    files, connect Zed to your WSL distribution.
-                                </p>
-                                <div class="callout callout-critical">
-                                    <svg
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
-                                        />
-                                        <path d="M12 9v4M12 17h.01" />
-                                    </svg>
-                                    <div>
-                                        <span class="label"
-                                            >Critical: always open projects via
-                                            WSL Remote</span
-                                        >
-                                        <p class="text">
-                                            Never open files from the Windows
-                                            filesystem (paths starting with
-                                            <code class="inline"
-                                                >/mnt/c/...</code
-                                            >). Cross-filesystem access is slow
-                                            and breaks tools. Always open
-                                            projects through the WSL Remote so
-                                            they live in the Linux filesystem.
-                                        </p>
-                                    </div>
-                                </div>
-                                <p>
-                                    A fresh WSL terminal drops you in
-                                    <code class="inline">/mnt/c/Users/...</code>
-                                    (your Windows home). Move to your Linux home
-                                    first: run <code class="inline">cd ~</code>.
-                                </p>
-                                <figure class="screenshot">
-                                    <img
-                                        src="assets/win-11-zed-wsl-remote-proj-picker.png"
-                                        alt="WSL Remote picker in Zed"
-                                        loading="lazy"
-                                        decoding="async"
-                                        style="
-                                            border-radius: 0.5rem;
-                                            width: 100%;
-                                            border: 1px solid #1b1b1b;
-                                        "
-                                    />
-                                    <figcaption>
-                                        Where the WSL Remote appears in Zed's
-                                        file picker.
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                        <!-- Windows Step 10 -->
-                        <div class="step-card">
-                            <div class="flex items-start gap-4">
-                                <span class="step-num">10</span>
-                                <h3 class="step-title">
-                                    Open Windows Terminal the Right Way
-                                </h3>
-                            </div>
-                            <div class="step-body mt-4">
-                                <div class="callout callout-caution">
-                                    <svg
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <circle cx="12" cy="12" r="10" />
-                                        <path d="M12 8v4M12 16h.01" />
-                                    </svg>
-                                    <div>
-                                        <span class="label"
-                                            >Type
-                                            <code class="inline">wsl</code>
-                                            every time</span
-                                        >
-                                        <p class="text">
-                                            Every time you open Windows Terminal
-                                            you start in PowerShell, a different
-                                            shell with different commands. Type
-                                            <code class="inline">wsl</code> to
-                                            drop into Ubuntu before running
-                                            anything from this guide.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="code-block">
-                                    <pre><code>wsl</code></pre>
-                                    <button
-                                        type="button"
-                                        class="copy-btn"
-                                        aria-label="Copy command to clipboard"
-                                    >
-                                        <svg
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <rect
-                                                x="9"
-                                                y="9"
-                                                width="13"
-                                                height="13"
-                                                rx="2"
-                                            />
-                                            <path
-                                                d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
-                                            />
-                                        </svg>
-                                        <span>Copy</span>
-                                    </button>
-                                </div>
-                                <p>
-                                    Once you're in WSL, run
-                                    <code class="inline">cd ~</code> to make
-                                    sure you're in your Linux home directory,
-                                    not the Windows filesystem. Everything you
-                                    set up here lives on the Linux side.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Windows Step 11 -->
-                        <div class="step-card">
-                            <div class="flex items-start gap-4">
-                                <span class="step-num">11</span>
-                                <h3 class="step-title">
-                                    You're in Zed via WSL Remote
-                                </h3>
-                            </div>
-                            <div class="step-body mt-4">
-                                <p>
-                                    You're connected to your WSL distribution
-                                    from inside Zed. The terminal, the file
-                                    tree, and every git command now run in
-                                    Linux, exactly the same as macOS from here
-                                    on out.
-                                </p>
-                            </div>
-                        </div>
+                        <div class="step-card"><div class="flex items-start gap-4"><span class="step-num">7</span><h3 class="step-title">Connect to Ubuntu in VS Code</h3></div>
+                            <div class="step-body mt-4"><p>Press <code class="inline">Ctrl+Shift+P</code>, type <strong>WSL: Connect to WSL</strong>, and press Enter. Choose Ubuntu if asked. Wait for VS Code to connect; the bottom-left corner should say <strong>WSL: Ubuntu</strong>. Click that corner if you need to switch connections later.</p>
+                                <div class="callout callout-critical"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg><div><span class="label">Keep projects in Ubuntu</span><p class="text">Use your Linux home (<code class="inline">~</code>), not <code class="inline">/mnt/c/Users/...</code>. Check for <strong>WSL: Ubuntu</strong> in the bottom-left before opening a project or terminal.</p></div></div>
+                                <p>Open the VS Code terminal with <code class="inline">Ctrl+`</code> (backtick, near the top-left of your keyboard). Once connected to WSL, a new terminal opens in Ubuntu. Run <code class="inline">cd ~</code> before cloning so the project lives on the Linux side.</p>
+                                <p>For more detail, see <a class="body-link" href="https://code.visualstudio.com/docs/remote/wsl" target="_blank" rel="noopener noreferrer">VS Code's WSL guide</a>.</p></div></div>
                     </div>
 
                     <div class="transition-card mt-8">
@@ -2564,58 +1660,48 @@ How do I set zsh as my default shell on WSL?</code></pre>
                         <p class="text-neutral-300">
                             From here on, macOS and Windows are identical.
                             Continue to the shared
-                            <a href="#in-zed">In-Zed Setup</a>.
+                            <a href="#in-vscode">shared setup</a>.
                         </p>
                     </div>
                 </div>
             </section>
 
-            <!-- ========== IN-ZED SETUP (shared) ========== -->
+            <!-- ========== IN-VS-CODE SETUP (shared) ========== -->
             <section
-                id="in-zed"
+                id="in-vscode"
                 class="scroll-mt-24 py-16 sm:py-20 border-t border-ink-700"
             >
                 <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
                     <p
                         class="text-sm font-semibold uppercase tracking-wider text-accent-500"
                     >
-                        In Zed
+                        In VS Code
                     </p>
                     <h2
                         class="mt-2 text-3xl font-bold text-accent-600 sm:text-4xl"
                     >
-                        In-Zed Setup
+                        Setup inside VS Code
                     </h2>
                     <p class="mt-4 max-w-2xl text-neutral-400">
-                        You're in Zed with a working Zsh shell. These steps are
+                        You're in VS Code with Git installed. These steps are
                         the same on macOS and Windows.
                     </p>
 
                     <div class="space-y-6 mt-8">
-                        <!-- In-Zed Step 1 -->
+                        <!-- In-VS-Code Step 1 -->
                         <div class="step-card">
                             <div class="flex items-start gap-4">
                                 <span class="step-num">1</span>
                                 <h3 class="step-title">
-                                    Clone the Example Project
+                                    Clone the Practice Repo
                                 </h3>
                             </div>
                             <div class="step-body mt-4">
                                 <p>
-                                    You'll clone
-                                    <code class="inline"
-                                        >simonteague6/profile-card</code
-                                    >, a simple profile card that shows how
-                                    commits and branches work together. It's the
-                                    demo for the Zed tour, not the real club
-                                    project.
+You'll clone <code class="inline">simonteague6/rc-first-pr-practice</code>. Use it to get familiar with the editor now; the first pull request comes later.
                                 </p>
                                 <p>
-                                    Open Zed's built-in terminal:
-                                    <code class="inline">Ctrl+`</code> (that's
-                                    the backtick key, left of
-                                    <code class="inline">1</code>). Then run
-                                    these one at a time:
+                                    Open VS Code's built-in terminal with <code class="inline">Ctrl+`</code> (backtick, left of <code class="inline">1</code>). On Windows, check for <strong>WSL: Ubuntu</strong> in the bottom-left and run <code class="inline">cd ~</code> first. Run these commands one at a time:
                                 </p>
                                 <div class="code-block">
                                     <pre><code>mkdir -p ~/projects</code></pre>
@@ -2647,7 +1733,7 @@ How do I set zsh as my default shell on WSL?</code></pre>
                                     </button>
                                 </div>
                                 <div class="code-block">
-                                    <pre><code>cd ~/projects &amp;&amp; git clone https://github.com/simonteague6/profile-card</code></pre>
+                                    <pre><code>cd ~/projects &amp;&amp; git clone https://github.com/simonteague6/rc-first-pr-practice</code></pre>
                                     <button
                                         type="button"
                                         class="copy-btn"
@@ -2676,7 +1762,7 @@ How do I set zsh as my default shell on WSL?</code></pre>
                                     </button>
                                 </div>
                                 <div class="code-block">
-                                    <pre><code>cd profile-card &amp;&amp; zed .</code></pre>
+                                    <pre><code>cd rc-first-pr-practice &amp;&amp; code .</code></pre>
                                     <button
                                         type="button"
                                         class="copy-btn"
@@ -2705,12 +1791,7 @@ How do I set zsh as my default shell on WSL?</code></pre>
                                     </button>
                                 </div>
                                 <p>
-                                    <code class="inline">zed .</code> opens the
-                                    current directory in Zed's file tree. You'll
-                                    see <code class="inline">index.html</code>,
-                                    <code class="inline">style.css</code>, and
-                                    <code class="inline">README.md</code>
-                                    appear.
+                                    <code class="inline">code .</code> opens the folder in VS Code. You should see <code class="inline">README.md</code> and a <code class="inline">names</code> folder. On macOS, if <code class="inline">code</code> is not found, open the Command Palette (<code class="inline">Cmd+Shift+P</code>), run <strong>Shell Command: Install 'code' command in PATH</strong>, and reopen the terminal.
                                 </p>
                                 <details
                                     class="collapsible"
@@ -2813,37 +1894,10 @@ How do I set zsh as my default shell on WSL?</code></pre>
                                         </div>
                                     </div>
                                 </details>
-                                <div class="callout callout-caution">
-                                    <svg
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <circle cx="12" cy="12" r="10" />
-                                        <path d="M12 8v4M12 16h.01" />
-                                    </svg>
-                                    <div>
-                                        <span class="label"
-                                            >Windows/WSL: always clone in the
-                                            terminal</span
-                                        >
-                                        <p class="text">
-                                            The command palette clone opens a
-                                            Windows filesystem picker, which
-                                            won't work with WSL. Always use the
-                                            terminal on Windows. (On macOS, the
-                                            command palette works fine if you
-                                            prefer it.)
-                                        </p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
-                        <!-- In-Zed Step 2 -->
+                        <!-- In-VS-Code Step 2 -->
                         <div class="step-card">
                             <div class="flex items-start gap-4">
                                 <span class="step-num">2</span>
@@ -2853,44 +1907,7 @@ How do I set zsh as my default shell on WSL?</code></pre>
                             </div>
                             <div class="step-body mt-4">
                                 <p>
-                                    Two quick checks confirm your shell and git
-                                    are ready.
-                                </p>
-                                <div class="code-block">
-                                    <pre><code>echo $SHELL</code></pre>
-                                    <button
-                                        type="button"
-                                        class="copy-btn"
-                                        aria-label="Copy command to clipboard"
-                                    >
-                                        <svg
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <rect
-                                                x="9"
-                                                y="9"
-                                                width="13"
-                                                height="13"
-                                                rx="2"
-                                            />
-                                            <path
-                                                d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
-                                            />
-                                        </svg>
-                                        <span>Copy</span>
-                                    </button>
-                                </div>
-                                <p>
-                                    Expect
-                                    <code class="inline">/bin/zsh</code> on
-                                    macOS,
-                                    <code class="inline">/usr/bin/zsh</code> on
-                                    WSL.
+                                    Check that Git is working inside the cloned folder.
                                 </p>
                                 <div class="code-block">
                                     <pre><code>git status</code></pre>
@@ -2922,228 +1939,34 @@ How do I set zsh as my default shell on WSL?</code></pre>
                                     </button>
                                 </div>
                                 <p>
-                                    Should run without "not found." Inside the
-                                    cloned project it also shows branch info.
+                                    You should see <code class="inline">On branch main</code> and a clean working tree.
                                 </p>
-                                <figure class="screenshot">
-                                    <img
-                                        src="assets/mac-verify-shell-and-git.png"
-                                        alt="Terminal verification: echo $SHELL and git status"
-                                        loading="lazy"
-                                        decoding="async"
-                                        style="
-                                            border-radius: 0.5rem;
-                                            width: 100%;
-                                            border: 1px solid #1b1b1b;
-                                        "
-                                    />
-                                    <figcaption>
-                                        A clean verification: the right shell
-                                        and git responding.
-                                    </figcaption>
-                                </figure>
-                                <details
-                                    class="collapsible"
-                                    data-severity="blue"
-                                >
-                                    <summary>
-                                        <svg
-                                            class="lead"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <circle cx="12" cy="12" r="10" />
-                                            <path d="M12 16v-4M12 8h.01" />
-                                        </svg>
-                                        <span class="label"
-                                            >What these check</span
-                                        >
-                                        <svg
-                                            class="chev"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <path d="m6 9 6 6 6-6" />
-                                        </svg>
-                                    </summary>
-                                    <div class="content">
-                                        <p>
-                                            <code class="inline"
-                                                >echo $SHELL</code
-                                            >
-                                            confirms Zsh is your default shell.
-                                            <code class="inline"
-                                                >git status</code
-                                            >
-                                            confirms git is installed and you're
-                                            inside a repository.
-                                        </p>
-                                    </div>
-                                </details>
                             </div>
                         </div>
                     </div>
 
                     <p class="mt-8 text-sm">
-                        Now take a quick tour of Zed →
-                        <a class="body-link" href="#zed-tour">Zed UI Tour</a>.
+                        Now take a quick tour of VS Code →
+                        <a class="body-link" href="#vscode-tour">VS Code UI Tour</a>.
                     </p>
                 </div>
             </section>
 
-            <!-- ========== ZED UI TOUR (shared) ========== -->
-            <section
-                id="zed-tour"
-                class="scroll-mt-24 py-16 sm:py-20 border-t border-ink-700"
-            >
+            <!-- ========== VS CODE UI TOUR (shared) ========== -->
+            <section id="vscode-tour" class="scroll-mt-24 py-16 sm:py-20 border-t border-ink-700">
                 <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-                    <p
-                        class="text-sm font-semibold uppercase tracking-wider text-accent-500"
-                    >
-                        Tour
-                    </p>
-                    <h2
-                        class="mt-2 text-3xl font-bold text-accent-600 sm:text-4xl"
-                    >
-                        Zed UI Tour
-                    </h2>
-                    <p class="mt-4 max-w-2xl text-neutral-400">
-                        A quick walk through Zed's features using the example
-                        project you just cloned. On Windows, this also confirms
-                        where your projects live on disk.
-                    </p>
-
-                    <p class="mt-6 text-neutral-400">
-                        Zed's window is split into a few key areas. The
-                        <strong>file tree</strong> lives on the left; you'll see
-                        <code class="inline">index.html</code>,
-                        <code class="inline">style.css</code>, and
-                        <code class="inline">README.md</code> here. The
-                        <strong>editor</strong> takes up the center. At the very
-                        top, a bar shows your current branch and lets you switch
-                        between open projects. Everything else (terminal, git
-                        graph, agent panel) slides open from the bottom or side
-                        when you need it.
-                    </p>
-
-                    <h3 class="step-title mt-8">Command palette</h3>
-                    <div class="step-body">
-                        <p>
-                            <code class="inline">Cmd+Shift+P</code> (macOS) or
-                            <code class="inline">Ctrl+Shift+P</code> (Windows)
-                            opens the command palette, the fastest way to do
-                            anything in Zed. Search for "clone," "open folder,"
-                            "toggle terminal," or any action. You can drive the
-                            entire editor from here without remembering
-                            shortcuts.
-                        </p>
-                    </div>
-
-                    <h3 class="step-title mt-8">File picker</h3>
-                    <div class="step-body">
-                        <p>
-                            <code class="inline">Cmd+P</code> (macOS) or
-                            <code class="inline">Ctrl+P</code> (Windows) opens a
-                            fuzzy file finder. Type any part of a filename to
-                            jump to it instantly.
-                        </p>
-                    </div>
-
-                    <h3 class="step-title mt-8">Git graph &amp; branches</h3>
-                    <div class="step-body">
-                        <p>
-                            Open the command palette and search "branches" (or
-                            "git graph") to pull up the project history. You'll
-                            see commits stacked on
-                            <code class="inline">main</code> and two branches
-                            that split off and merged back:
-                            <code class="inline">bugfix/typo-in-bio</code> and
-                            <code class="inline">feature/add-paragraph</code>.
-                        </p>
-                        <p>Try these:</p>
-                        <ul class="list-disc pl-5 space-y-1 mt-2">
-                            <li>
-                                <strong>Switch branches:</strong> click the
-                                branch name in the top bar (it says
-                                <code class="inline">main</code> right now) and
-                                pick another. The card updates to show what that
-                                branch looks like.
-                            </li>
-                            <li>
-                                <strong>View a diff:</strong> click any commit
-                                or branch in the graph. Zed shows you exactly
-                                which lines were added or removed, color-coded
-                                green and red.
-                            </li>
-                            <li>
-                                <strong>Stay in sync:</strong> the graph also
-                                tells you if your local copy is behind the
-                                remote. When the club project gets updates, this
-                                is how you'll know to run
-                                <code class="inline">git pull</code>.
-                            </li>
-                        </ul>
-                    </div>
-
+                    <p class="text-sm font-semibold uppercase tracking-wider text-accent-500">Tour</p>
+                    <h2 class="mt-2 text-3xl font-bold text-accent-600 sm:text-4xl">VS Code UI Tour</h2>
+                    <p class="mt-4 max-w-2xl text-neutral-400">With the example project open, try these parts of the editor.</p>
+                    <h3 class="step-title mt-8">Explorer and file picker</h3>
+                    <div class="step-body"><p>The <strong>Explorer</strong> on the left shows the project's files. Click one to edit it in the center. Use <code class="inline">Cmd+P</code> on macOS or <code class="inline">Ctrl+P</code> on Windows to find a file by name.</p></div>
+                    <h3 class="step-title mt-8">Command Palette</h3>
+                    <div class="step-body"><p>Press <code class="inline">Cmd+Shift+P</code> on macOS or <code class="inline">Ctrl+Shift+P</code> on Windows, then type an action. On Windows, search for <strong>WSL: Connect to WSL</strong> here if you need to reconnect.</p></div>
+                    <h3 class="step-title mt-8">Source Control</h3>
+                    <div class="step-body"><p>Click the branching icon in the left Activity Bar to see changed files. Click a file to see its diff. Your current branch appears in the bottom-left status bar; click it to see other branches. To see the project's history in the terminal, run <code class="inline">git log --oneline --graph --all</code>.</p></div>
                     <h3 class="step-title mt-8">Terminal</h3>
-                    <div class="step-body">
-                        <p>
-                            Press <code class="inline">Ctrl+`</code> to open an
-                            in-editor terminal running your Zsh shell. It opens
-                            in your project directory, ready to run commands
-                            without leaving Zed.
-                        </p>
-                    </div>
-
-                    <h3 class="step-title mt-8">Agent Panel</h3>
-                    <div class="step-body">
-                        <p>
-                            The sidebar shows agent conversation threads, each
-                            tied to a project directory. No setup needed; just
-                            know it's there when you're ready to explore it
-                            later.
-                        </p>
-                    </div>
-
-                    <div class="step-body mt-8">
-                        <p>
-                            Zed has a lot more under the hood. For the full
-                            tour, check out
-                            <a
-                                class="body-link"
-                                href="https://zed.dev"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >zed.dev</a
-                            >.
-                        </p>
-                    </div>
-
-                    <figure class="screenshot">
-                        <img
-                            src="assets/mac-zed-tour.png"
-                            alt="Annotated Zed UI tour: project picker, git branch picker, file picker, git graph, terminal, Agent Panel"
-                            loading="lazy"
-                            decoding="async"
-                            style="
-                                border-radius: 0.5rem;
-                                width: 100%;
-                                border: 1px solid #1b1b1b;
-                            "
-                        />
-                        <figcaption>
-                            The key areas this tour covers, called out on one
-                            screenshot.
-                        </figcaption>
-                    </figure>
+                    <div class="step-body"><p>Press <code class="inline">Ctrl+`</code> to open the terminal inside VS Code. On Windows, check that the bottom-left status bar says <strong>WSL: Ubuntu</strong> so your terminal runs in Linux.</p></div>
+                    <p class="mt-8 text-neutral-400">More about the editor: <a class="body-link" href="https://code.visualstudio.com/docs/editing/getting-started/userinterface" target="_blank" rel="noopener noreferrer">VS Code user interface guide</a>.</p>
                 </div>
             </section>
 
@@ -3253,7 +2076,7 @@ How do I set zsh as my default shell on WSL?</code></pre>
                         <li>
                             <a
                                 class="next-link"
-                                href="https://zed.dev/docs/getting-started"
+                                href="https://code.visualstudio.com/docs/editing/getting-started/userinterface"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -3273,9 +2096,9 @@ How do I set zsh as my default shell on WSL?</code></pre>
                                 </svg>
                                 <span
                                     ><span class="title"
-                                        >Zed getting started docs</span
+                                        >VS Code user interface docs</span
                                     ><span class="url"
-                                        >zed.dev/docs/getting-started</span
+                                        >code.visualstudio.com/docs/editing/getting-started/userinterface</span
                                     ></span
                                 >
                             </a>
@@ -3412,9 +2235,7 @@ How do I set zsh as my default shell on WSL?</code></pre>
                             <span class="desc"
                                 >The fundamentals are the foundation; this is
                                 where they pay off. A guided walkthrough from a
-                                fresh clone of the club's profile-card repo to
-                                your own card merged in via a pull request. No
-                                experience needed, go at your own pace.</span
+                                a fresh clone to a text file in the practice repo, then a pull request. Focus on Git and GitHub, not writing HTML.</span
                             >
                         </span>
                         <span class="arrow" aria-hidden="true">

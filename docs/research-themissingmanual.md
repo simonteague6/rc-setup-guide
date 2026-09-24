@@ -84,7 +84,7 @@ Fetched: `https://themissingmanual.dev/` (HTTP 200).
 
 2. **The Terminal & Shell, Explained**
    `https://themissingmanual.dev/guides/the-terminal-and-shell`
-   Why: Setting up a dev environment is terminal-driven (and Rowdy Creators' own guide is built around Zsh and the shell). This Basic-level explainer gives total beginners the mental model for the shell they're about to spend all their time in.
+   Why: Setting up a dev environment is terminal-driven (and Rowdy Creators' own guide uses the terminal). This Basic-level explainer gives total beginners the mental model for the shell they're about to spend all their time in.
 
 3. **What Tooling Even Is**
    `https://themissingmanual.dev/guides/what-tooling-even-is`
